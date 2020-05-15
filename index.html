@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Punch</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <!-- input for image -->
+    <div id="inputImage">
+        <input type="file" accept="image/png, image/jpeg" onChange="previewImage(this)">
+    </div>
+    <!-- image goes here -->
+    <div id="previewImage"></div>
+    <!-- punch -->
+    <audio id="punchAudio">
+        <source src="audio/punchAudio.mp3" type="audio/mpeg">
+    </audio>
+    <button onClick="activatePunch()">Punch 👊</button>
+
+    <!-- slap -->
+    <audio id="slapAudio">
+        <source src="audio/slapAudio.mp3" type="audio/mpeg">
+    </audio>
+    <button onClick="activateSlap()">Slap 👋</button>
+
+    <script src="index.js"></script>
+</body>
+</html>
